@@ -66,7 +66,13 @@ competitiva de la universidad EAFIT.
       <td>Lecture 4</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
-	<b>Programacion dinamica 1</b> <br>
+	<b>Busqueda binaria</b> <br>
+	<ul>
+	  <li>Busqueda binaria discreta</li>
+	  <li>Busqueda binaria continua</li>
+	  <li>Búsqueda ternaria</li>
+	  <li>Ventanas deslizantes</li>
+	</ul>
       </td>
       <td>
           Pronto
@@ -76,7 +82,27 @@ competitiva de la universidad EAFIT.
       <td>Lecture 5</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
+	<b>Programacion dinamica 1</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 6</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
 	<b>Programacion dinamica 2</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Seccion de problemas</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>OwO</b>
       </td>
       <td>
           Pronto
