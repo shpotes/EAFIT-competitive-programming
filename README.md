@@ -27,6 +27,61 @@ competitiva de la universidad EAFIT.
           Pronto
       </td>
     </tr>
+    <tr>
+      <td>Lecture 2</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Paradigmas de solucion de problemas</b> <br>
+	<ul>
+	  <li>Busqueda completa</li>
+	  <li>Backtracking</li>
+	  <li>Divide and conquer</li>
+        </ul>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 3</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Greedy</b>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Seccion de problemas</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>¿Como es una maraton de programacion?</b>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 4</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Programacion dinamica 1</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 5</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Programacion dinamica 2</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
 </tbody></table>
 
 **Nota**: Este syllabus esta sujeto a cambios.
