@@ -107,7 +107,87 @@ competitiva de la universidad EAFIT.
       <td>
           Pronto
       </td>
+     </tr>
+       <tr>
+      <td>Lecture 7</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Grafos 1</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
     </tr>
+    <tr>
+      <td>Lecture 8</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Grafos 2</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 9</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Grafos 3</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Seccion de problemas</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>TBA</b>
+      </td>
+      <td>
+          Pronto
+      </td>
+     </tr>    
+       <tr>
+      <td>Lecture 10</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Matematicas</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 11</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Strings</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Lecture 12</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>Geometria</b> <br>
+      </td>
+      <td>
+          Pronto
+      </td>
+    </tr>
+    <tr>
+      <td>Seccion de problemas</td>
+      <td> -- <br> Feb - <br> TBA </td>
+      <td>
+	<b>TBA</b>
+      </td>
+      <td>
+          Pronto
+      </td>
+     </tr> 	  
 </tbody></table>
 
 **Nota**: Este syllabus esta sujeto a cambios.
