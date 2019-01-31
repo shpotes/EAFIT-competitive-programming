@@ -56,7 +56,7 @@ competitiva de la universidad EAFIT.
       <td>Seccion de problemas</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
-	<b>¿Como es una maraton de programacion?</b>
+	<b>¿Como son los problemas de una maraton de programacion?</b>
       </td>
       <td>
           Pronto
@@ -102,7 +102,7 @@ competitiva de la universidad EAFIT.
       <td>Seccion de problemas</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
-	<b>OwO</b>
+	<b>¿Como es una maraton de programacion?</b>
       </td>
       <td>
           Pronto
