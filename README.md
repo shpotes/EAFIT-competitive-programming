@@ -1,4 +1,4 @@
-# Semillero de programacion competitive EAFIT 
+# Semillero de programacion competitiva EAFIT 
 Este repositorio contiene el material para el semillero de programacion
 competitiva de la universidad EAFIT.
 
