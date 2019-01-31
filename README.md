@@ -6,7 +6,7 @@ competitiva de la universidad EAFIT.
 
 <table class="table">
   <tbody><tr class="active">
-      <th>Tipo de evento</th><th>Fecha</th><th>Descripción</th><th>Material del curso</th>
+      <th>Tipo de evento</th><th>Fecha</th><th>Descripción</th><th>Material del dia</th>
     </tr>
     <tr>
       <td>Lecture 1</td>
