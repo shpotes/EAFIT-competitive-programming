@@ -8,7 +8,7 @@ competitiva de la universidad EAFIT.
       <th>Tipo de evento</th><th>Fecha</th><th>Descripción</th><th>Material del dia</th>
     </tr>
     <tr>
-      <td>Lecture 1</td>
+      <td>Seccion 1</td>
       <td> Jueves <br> Feb - 7 <br> TBA </td>
       <td>
 	<b>Estructuras de datos y Librerias</b> <br>
@@ -26,7 +26,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 2</td>
+      <td>Seccion 2</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Paradigmas de solucion de problemas</b> <br>
@@ -41,7 +41,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 3</td>
+      <td>Seccion 3</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Greedy</b>
@@ -61,7 +61,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 4</td>
+      <td>Seccion 4</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Busqueda binaria</b> <br>
@@ -77,7 +77,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 5</td>
+      <td>Seccion 5</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Programacion dinamica 1</b> <br>
@@ -87,7 +87,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 6</td>
+      <td>Seccion 6</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Programacion dinamica 2</b> <br>
@@ -107,7 +107,7 @@ competitiva de la universidad EAFIT.
       </td>
      </tr>
        <tr>
-      <td>Lecture 7</td>
+      <td>Seccion 7</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Grafos 1</b> <br>
@@ -117,7 +117,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 8</td>
+      <td>Seccion 8</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Grafos 2</b> <br>
@@ -127,7 +127,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 9</td>
+      <td>Seccion 9</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Grafos 3</b> <br>
@@ -147,7 +147,7 @@ competitiva de la universidad EAFIT.
       </td>
      </tr>    
        <tr>
-      <td>Lecture 10</td>
+      <td>Seccion 10</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Matematicas</b> <br>
@@ -157,7 +157,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 11</td>
+      <td>Seccion 11</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Strings</b> <br>
@@ -167,7 +167,7 @@ competitiva de la universidad EAFIT.
       </td>
     </tr>
     <tr>
-      <td>Lecture 12</td>
+      <td>Seccion 12</td>
       <td> -- <br> Feb - <br> TBA </td>
       <td>
 	<b>Geometria</b> <br>
