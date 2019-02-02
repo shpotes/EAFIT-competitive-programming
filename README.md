@@ -21,7 +21,7 @@ competitiva de la universidad EAFIT.
 	</ul>
       </td>
       <td>
-          <a href="/lect1/lect1-intro.pdf">[slides]</a><br>
+          <a href="lect-1/lect1-intro.pdf">[slides]</a><br>
           <a href="https://a2oj.com/contest?ID=38718">[contest]</a>
       </td>
     </tr>
