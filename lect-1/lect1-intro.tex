@@ -1,0 +1,184 @@
+\documentclass{beamer}
+
+\usetheme{hsrm}
+\usepackage{datetime}
+\usepackage{hyperref}
+
+\title{Introduction}
+\subtitle{to competitive programming}
+\author{Santiago Hincapie-Potes}
+\institute{Universidad EAFIT}
+
+\newdate{date}{07}{02}{2019}
+
+\date{\displaydate{date}}
+
+\begin{document}
+
+\maketitle
+
+\section*{Content}
+\begin{frame}{Today we're going to cover}
+  \tableofcontents[hideallsubsections]
+\end{frame}
+
+\section{Basic data types}
+\begin{frame}{You should all be familiar with}
+  \begin{itemize}
+  \item \texttt{bool}: a boolean (\texttt{true}/\texttt{false})
+  \item \texttt{char}: an 8-bit signed integer (often used to represent characters with ASCII)
+  \item \texttt{short}: a 16-bit signed integer
+  \item \texttt{int}: a 32-bit signed integer
+  \item \texttt{long long}: a 64-bit signed integer
+  \item \texttt{float}: a 32-bit floating-point number
+  \item \texttt{double}: a 64-bit floating-point number
+  \item \texttt{long double}: a 128-bit floating-point number
+  \item \texttt{string}: a string of characters
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Range}
+    {\scriptsize
+        \begin{center}
+            \begin{tabular}{l|lll}
+                Type & Bytes & Min value & Max value \\
+                \hline
+                bool & 1 & & \\
+                char & 1 & -128 & 127 \\
+                short & 2 & -32768 & 32767 \\
+                int & 4 & -2148364748 & 2147483647 \\
+                long long & 8 & -9223372036854775808 & 9223372036854775807 \\
+                          & $n$ & $-2^{8n-1}$ & $2^{8n-1}-1$
+            \end{tabular}
+        \end{center}
+    }
+
+    {\scriptsize
+        \begin{center}
+            \begin{tabular}{l|lll}
+                Type & Bytes & Min value & Max value \\
+                \hline
+                unsigned char & 1 & 0 & 255 \\
+                unsigned short & 2 & 0 & 65535 \\
+                unsigned int & 4 & 0 & 4294967295 \\
+                unsigned long long & 8 & 0 & 18446744073709551615 \\
+                    & $n$ & $0$ & $2^{8n}-1$
+            \end{tabular}
+        \end{center}
+    }
+\end{frame}
+
+\begin{frame}{Simple Addition}
+  \begin{center}
+    \href{https://open.kattis.com/problems/simpleaddition}{https://open.kattis.com/problems/simpleaddition}
+  \end{center}
+\end{frame}
+
+\section{Big integers}
+\begin{frame}{Big integer}
+  \begin{itemize}
+  \item What if we need to represent and do computations with very large integers,
+    i.e. something that doesn't fit in a \texttt{long long}
+    \pause
+  \item Simple idea: Store the integer as a string
+    \pause
+  \item But how do we perform arithmetic on a pair of strings?
+  \item We can use the same algorithms as we learned in elementary school
+    \pause
+  \item C/C++ $\to$ implement from scratch
+  \item Java $\to$ \texttt{java.math.BigInteger}
+  \item python $\to$ default integers
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Modular arithmetic}
+\end{frame}
+
+\section{Complexity theory basis}
+\begin{frame}{Number of operations}
+\end{frame}
+
+\begin{frame}{Complexity table}
+\end{frame}
+
+\section{Data structures you already know}
+\begin{frame}{Vector}
+  \begin{itemize}
+  \item \texttt{vector<type>} in C++, with \texttt{push\_back} and \texttt{pop\_back}
+  \item \texttt{ArrayList<Type>} in Java, with \texttt{.add} and \texttt{.remove(list.size()-1)}
+  \item \texttt{list} in Python, with \texttt{.append} and \texttt{.pop}
+  \item Indexing as \texttt{list[i]} or \texttt{list.git(i)}
+  \item Can be use as a \textbf{stack}
+  \item $\mathcal{O}(1)$ (Amortized)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Queue}
+  \begin{itemize}
+  \item \texttt{queue<type>} in C++, with \texttt{push}, \texttt{front} and \texttt{pop}
+  \item \texttt{ArrayDeque<Type>} in Java, with \texttt{.add}, \texttt{getFist} and \texttt{.remove}
+  \item \texttt{collections.deque} in Python, with \texttt{.append}, \texttt{deque[0]} and \texttt{.popleft}
+  \item Can be use as a \textbf{queue}
+  \item $\mathcal{O}(1)$ (Amortized)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{Deque}
+  \begin{itemize}
+  \item \texttt{queue<type>} in C++, with \texttt{push\_front}, \texttt{push\_back}, \texttt{pop\_front} and \texttt{pop\_back}
+  \item \texttt{ArrayDeque<Type>} in Java, with \texttt{.addFirst}, \texttt{.addLast}, \texttt{.removeFirst} and \texttt{.removeLast}
+  \item \texttt{collections.deque} in Python, with \texttt{.appendleft}, \texttt{.append}, \texttt{popleft} and \texttt{.pop}
+  \item Indexing as \texttt{list[i]} (\textbf{Not in Java!})
+  \item Can be use as a \textbf{queue} or \textbf{stack} 
+  \item $\mathcal{O}(1)$ (Amortized)
+\end{itemize}
+\end{frame}
+
+\begin{frame}{HashSet}
+  \begin{itemize}
+  \item \texttt{unordered\_set<type>} in C++
+  \item \texttt{HashSet<Type>} in Java
+  \item \texttt{set} in python
+  \item insert, delete and consult membership in $\mathcal{O}(1)$ 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{HashMap}
+  \begin{itemize}
+  \item \texttt{unordered\_map<type1, type2>} in C++
+  \item \texttt{HashMap<Type1, Type2>} in Java
+  \item \texttt{dict} in python
+  \item insert, delete and consult membership in $\mathcal{O}(1)$
+  \item Just like HashSet but with key-value storage 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{TreeSet}
+  \begin{itemize}
+  \item \texttt{set<type>} in C++
+  \item \texttt{TreeSet<Type>} in Java
+  \item $\sim$\texttt{collections.OrderedDict} in python
+  \item insert, delete, consult membership, lower\_bound and upper\_bound in $\mathcal{O}(\log{n})$ 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{TreeMap}
+  \begin{itemize}
+  \item \texttt{map<type1, type2>} in C++
+  \item \texttt{TreeMap<Type1, Type2>} in Java
+  \item \texttt{collections.OrderedDict} in python
+  \item insert, delete, consult membership, lower\_bound and upper\_bound in $\mathcal{O}(\log{n})$ 
+  \item Just like TreeSet but with key-value storage 
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Contest}
+  \href{https://a2oj.com/register?ID=38718}{https://a2oj.com/register?ID=38718}
+\end{frame}
+
+\begin{frame}{Next week}
+  \centering 
+  \Large
+  Problem solving paradigms
+\end{frame}
+\end{document}
