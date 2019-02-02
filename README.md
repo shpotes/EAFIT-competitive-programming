@@ -9,7 +9,7 @@ competitiva de la universidad EAFIT.
     </tr>
     <tr>
       <td>Seccion 1</td>
-      <td> Jueves <br> Feb - 7 <br> TBA </td>
+      <td> Miercoles <br> Feb - 6 <br> TBA </td>
       <td>
 	<b>Estructuras de datos y Librerias</b> <br>
     Introduccion <br>
