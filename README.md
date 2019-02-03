@@ -3,6 +3,7 @@ Este repositorio contiene el material para el semillero de programacion
 competitiva de la universidad EAFIT.
 
 ## Syllabus
+A menos que se especifique lo contrario, las secciones se realizarán los miercoles, de 18:00 a 19:30.
 <table class="table">
   <tbody><tr class="active">
       <th>Tipo de evento</th><th>Fecha</th><th>Descripción</th><th>Material del dia</th>
