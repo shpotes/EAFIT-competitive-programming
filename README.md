@@ -10,7 +10,7 @@ A menos que se especifique lo contrario, las secciones se realizarán los mierco
     </tr>
     <tr>
       <td>Seccion 1</td>
-      <td> Miercoles <br> Feb - 6 <br> 18-205 </td>
+      <td> Miercoles <br> Feb - 6 <br> 18-20_ </td>
       <td>
 	<b>Estructuras de datos y Librerias</b> <br>
     Introduccion <br>
