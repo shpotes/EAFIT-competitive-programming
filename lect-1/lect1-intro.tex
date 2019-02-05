@@ -3,6 +3,7 @@
 \usetheme{hsrm}
 \usepackage{datetime}
 \usepackage{hyperref}
+\usepackage{booktabs}
 
 \title{Introduction}
 \subtitle{to competitive programming}
@@ -91,14 +92,22 @@
   \end{itemize}
 \end{frame}
 
-\begin{frame}{Modular arithmetic}
-\end{frame}
-
 \section{Complexity theory basis}
-\begin{frame}{Number of operations}
-\end{frame}
-
+\centering
 \begin{frame}{Complexity table}
+  \begin{table}[]
+    \begin{tabular}{ll}
+      \toprule
+      $n$             & Worst AC Algorithm   \\
+      \midrule
+      $n \leq 10$   & $O(n!)$                \\
+      $n \leq 20$   & $O(2^n)$                \\
+      $n \leq 500$  & $O(n^3)$               \\
+      $n \leq 10^6$ & $O(n\log{n})$ o $O(n)$ \\
+      $n$ largest   & $O(1)$ o $O(\log{n})$  \\
+      \bottomrule
+    \end{tabular}
+  \end{table}
 \end{frame}
 
 \section{Data structures you already know}
