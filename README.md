@@ -3,13 +3,14 @@ Este repositorio contiene el material para el semillero de programacion
 competitiva de la universidad EAFIT.
 
 ## Syllabus
+A menos que se especifique lo contrario, las secciones se realizarán los miercoles, de 18:00 a 19:30.
 <table class="table">
   <tbody><tr class="active">
       <th>Tipo de evento</th><th>Fecha</th><th>Descripción</th><th>Material del dia</th>
     </tr>
     <tr>
       <td>Seccion 1</td>
-      <td> Jueves <br> Feb - 7 <br> TBA </td>
+      <td> Miercoles <br> Feb - 6 <br> 18-20_ </td>
       <td>
 	<b>Estructuras de datos y Librerias</b> <br>
     Introduccion <br>
@@ -21,7 +22,7 @@ competitiva de la universidad EAFIT.
 	</ul>
       </td>
       <td>
-          <a href="/lect1/lect1-intro.pdf">[slides]</a><br>
+          <a href="lect-1/lect1-intro.pdf">[slides]</a><br>
           <a href="https://a2oj.com/contest?ID=38718">[contest]</a>
       </td>
     </tr>
