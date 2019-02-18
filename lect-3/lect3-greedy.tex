@@ -4,6 +4,7 @@
 \usepackage{datetime}
 \usepackage{hyperref}
 \usepackage{booktabs}
+\usepackage[spanish]{babel}
 
 \title{Pensando en Greedy}
 \subtitle{Programacion Competitiva}
@@ -24,15 +25,115 @@
 \end{frame}
 
 \section{Algoritmos greedy}
-\subsection{¿Que es un algoritmo greedy?}
+\begin{frame}{¿Que son?}
+  \begin{itemize}
+  \item Diremos que un algoritmo es greedy cuando en cada paso, elige la
+    ``mejor'' solución local.
+    \pause
+  \item Dicha función de elección puede conducirnos o no a una solución
+    óptima.
+    \pause
+  \item Cuando el algoritmo conduzca a una solución óptima diremos que
+    el greedy ``funciona''.
+    \pause
+  \item Beneficio inmediato.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Problema de la moneda}
+  \begin{itemize}
+  \item El problema de cambio de monedas aborda la forma de encontrar el número mínimo
+    de monedas (de ciertas denominaciones) tales que entre ellas suman una cierta
+    cantidad. \pause
+  \item Elegimos en cada paso la moneda de mayor denominacion que no supere el monto.
+    \pause
+  \item ¿Funciona esta idea?
+    \pause
+  \item Consideremos que tenemos monedas de $(25, 15, 1)$ y deseamos dar un cambio de $30$
+    \pause
+  \item El algoritmo encontraria la secuencia $\{25, 1, 1, 1, 1, 1\}$, sin embargo,
+    la secuencia optima es $\{15, 15\}$
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Problema de la Selección de Tareas}
+  Juan tiene $n$ actividades que realizar y sabe cuándo empieza y
+  cuándo termina cada una. Lamentablemente algunas se superponen y
+  por lo tanto no puede realizarlas todas. El problema pide la máxima
+  cantidad de actividades que Juan puede realizar sin que se le
+  superpongan dos de ellas.
+  \begin{itemize}
+  \item Por ejemplo si tenemos tres tareas de rangos $(1,3)$ , $(2,9)$ y $(8,10)$
+  \item $\dots$ la respuesta sería 2 tareas, la primera y la última.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Problema de la Selecci\'on de Tareas}
+  \begin{itemize}
+  \item ¿Hay alguna forma de decidir rápidamente qué tarea hacer primero? \pause 
+  \item ¿elegir la tarea que dure menos tiempo? \pause
+  \item ¿la tarea que empiece primero? \pause
+  \item No funcionan. \pause
+  \item \textbf{Clave:} Escoger la tare que te deje el mayor tiempo posible
+    para realizar las próximas.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Problema de la Selección de Tareas}
+  \begin{itemize}
+  \item La forma correcta de ordenarlas es por horario de finalización
+  \item Siempre que podamos realizar la próxima tarea la realizamos,
+    sino la ignoramos.
+  \item De esta forma, intuitivamente vamos realizando una a una las
+    tareas con el objetivo de que nos sobre mayor tiempo para
+    realizar las otras.
+  \item ¿Funciona esto?
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{¿Por qué es correcto este algoritmo?}
+  \begin{itemize}
+  \item Supongamos que el algoritmo no es óptimo
+  \item Con la selección de tareas que nosotros realizamos vamos
+    resolviendo los siguientes subproblemas: ¿Cuántas actividades
+    podemos hacer desde que terminaron las primeras i actividades?
+    ¿Cuál es la próxima tarea a hacer?
+  \item Supongamos que en ese subproblema, no hay solución eligiendo
+    como primer tarea la que finaliza primero dentro de las posibles.
+  \item Borremos la primer tarea elegida, y pongamos la que finaliza
+    primero de las posibles. Todas las otras claramente van a poder
+    realizarse
+  \item Por lo tanto hay una solución óptima que elije la primer tarea que
+    finaliza. Contradicción.
+  \item Luego, el algoritmo es óptimo
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Teorema de Nico Alvarez}
+  ``Todos los problemas Greedies salen igual. Hay que ordenar `las
+  tareas' y después resolverlas en ese orden. Para ver en que orden se
+  resuelven tenes que agarrar dos tareas y ver cual es la que
+  greedymente se tiene que hacer primero''\pause
+  Eso quiere decir que el código será simplemente:
+  \begin{itemize}
+  \item Hacer una función de comparación entre 2 tareas
+  \item Ordenar el `arreglo de tareas'
+  \item Hacer un \texttt{for}
+  \end{itemize}
+  La parte más difícil claramente es la función de comparacion
+\end{frame}
+
+% otro ejemplo http://trainingcamp.elsantodel90.tk/actual/clases/Clase%202_%20Greedy.pdf
 
 \section{Greedy is god}
-\subsection{¿Cuando podemos utilizar una estrategia greedy?}
-\subsection{¿Como podemos demostrar que una estategia greedy funcionará?}
+% http://trainingcamp.elsantodel90.tk/anteriores/2012/clases/03-Greedy.pdf
+%\subsection{¿Cuando podemos utilizar una estrategia greedy?}
+% Metroid https://stackoverflow.com/questions/13557979/why-does-the-greedy-coin-change-algorithm-not-work-for-some-coin-sets 
+%\subsection{¿Como podemos demostrar que una estategia greedy funcionará?}
 
-\section{Ejemplos}
-%TODO
 
+
+\section{Proxima sesion}
 \begin{frame}{Contest}
   TODO
 \end{frame}
