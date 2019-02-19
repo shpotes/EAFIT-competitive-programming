@@ -81,23 +81,23 @@
 
 \begin{frame}{Problema de la Selección de Tareas}
   \begin{itemize}
-  \item La forma correcta de ordenarlas es por horario de finalización
+  \item La forma correcta de ordenarlas es por horario de finalización\pause
   \item Siempre que podamos realizar la próxima tarea la realizamos,
-    sino la ignoramos.
+    sino la ignoramos.\pause
   \item De esta forma, intuitivamente vamos realizando una a una las
     tareas con el objetivo de que nos sobre mayor tiempo para
-    realizar las otras.
+    realizar las otras.\pause
   \item ¿Funciona esto?
   \end{itemize}
 \end{frame}
 
 \begin{frame}{¿Por qué es correcto este algoritmo?}
   \begin{itemize}
-  \item Supongamos que el algoritmo no es óptimo
+  \item Supongamos que el algoritmo no es óptimo\pause % Existe una selecion mejor
   \item Con la selección de tareas que nosotros realizamos vamos
     resolviendo los siguientes subproblemas: ¿Cuántas actividades
-    podemos hacer desde que terminaron las primeras i actividades?
-    ¿Cuál es la próxima tarea a hacer?
+    podemos hacer desde que terminaron las primeras $i$ actividades?
+  \item ¿Cuál es la próxima tarea a hacer?\pause
   \item Supongamos que en ese subproblema, no hay solución eligiendo
     como primer tarea la que finaliza primero dentro de las posibles.
   \item Borremos la primer tarea elegida, y pongamos la que finaliza
@@ -123,24 +123,160 @@
   La parte más difícil claramente es la función de comparacion
 \end{frame}
 
+\begin{frame}{The Hero}
+Dado un héroe llamado Foronda con sus puntos de vida inicial y
+dados los monstruos que Foronda tiene que matar, queremos saber
+si puede matarlos a todos sin quedarse en ningún momento sin
+energía.\\
+Los monstruos se simbolizan con la vida $c_i$ que le cuesta al héroe
+matar al $i$-ésimo monstruo. Además, cada monstruo cuida un cofre
+que contiene una poción, la cual Foronda sólo puede beber luego de
+matar al monstruo que la cuida y que le hace recuperar $r_i$ puntos de
+vida al héroe. Foronda tiene vida máxima infinita.\\
+\textbf{Constraints:}
+$N \leq 10^5$ Monstruos, $1 \leq Z \leq 10^5$ vida inicial, $c_i
+, r_i \leq 10^5$ naturales
+\end{frame}
+
+\begin{frame}{Solucion}
+  \begin{itemize}
+    \item Por el teorema anterior hay que buscar una forma de ordenar los
+      monstruos para saber cuál matar primero.\pause
+    \item Lo primero que hay que suponer es que podemos matar a todos
+      y ver si llegamos a una contradicción.\pause
+    \item Ahora... ¿En qué orden los matamos?\pause
+    \item Empecemos matando a los monstruos buenos, los que te dan
+      diferencia positiva de vida, es decir, los que la poción te da más
+      vida que la que te saca el monstruo.\pause
+    \item Supongamos que no los podemos matar al principio, no los
+      vamos a poder matar teniendo menos vida y ademas después vamos 
+      a tener más vida para los otros.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Solucion}
+  \begin{itemize}
+    \item Pero... ¿En qué orden matamos a los monstruos buenos?
+    \item No parece muy complejo, como cada vez vamos a tener mayor
+      vida si antes podíamos matar a un monstruo bueno, nunca
+      vamos a dejar de poder matarlo, por lo que una estrategia “matar
+      al que podamos” va a funcionar.
+    \item Si en algún momento queda algún monstruo bueno y no podemos
+      matar a ningun otro bueno, nunca podremos matarlo.
+    \item Pensando un poquito más para simplificar el algoritmo, podemos
+      matarlos en orden creciente de la vida $c_i$ que nos cuesta matarlos.
+    \item Si en algún momento no podemos matar al monstruo bueno
+      $i$-ésimo no podremos matar a ningún otro bueno ya que nunca
+      podremos poseer más vida de la que tenemos.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Solucion}
+  \begin{itemize}
+    \item Nos quedan los malos.
+    \item ¿Podemos matarlos en el mismo orden que a los buenos?
+    \item Antes de programar esa idea, intentemos buscar un caso borde
+      que nos destruya ese greedy...
+    \item Si un monstruo malo cuesta mucho pero te recupera casi la
+      misma cantidad quizá convenga matarlo antes, ¿no?
+    \item ¿Otra idea?
+    \item ¡Matemos al que te cueste menor diferencia de vida!
+    \item ¡Matemos al que te saque mayor vida!
+    \item Generemos un caso de prueba con 2 monstruos y
+      analicemos como deberiamos resolverlos
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Solucion}
+  \begin{itemize}
+  \item Matemos los monstruos malos en orden decreciente de lo que
+    nos recuperan $r_i$.
+  \item Pensemos un caso para probarlo (tablero)
+  \item ¿Como podemos estar seguros de que esto funciona?
+  \end{itemize}
+\end{frame}
+
 % otro ejemplo http://trainingcamp.elsantodel90.tk/actual/clases/Clase%202_%20Greedy.pdf
 
 \section{Greedy is god}
-% http://trainingcamp.elsantodel90.tk/anteriores/2012/clases/03-Greedy.pdf
-%\subsection{¿Cuando podemos utilizar una estrategia greedy?}
-% Metroid https://stackoverflow.com/questions/13557979/why-does-the-greedy-coin-change-algorithm-not-work-for-some-coin-sets 
-%\subsection{¿Como podemos demostrar que una estategia greedy funcionará?}
+\begin{frame}{Cuando podemos utilizar una estrategia greedy?}
+  \begin{itemize}
+  \item Cuando un problema exhibe la propiedad ‘optimal-substructure‘.
+    Es decir que toda solución óptima a un problema puede ser
+    construida considerando soluciones optimas de los
+    subproblemas.
+  \item Los problemas que exhiben dicha propiedad pueden ser resueltos
+    de forma greedy o con programación dinamica.
+  \item Existe también un conjunto de teoremas para demostrar que
+    cuando un problema exhibe las propiedades de un matroide,
+    siempre un algoritmo greedy nos llevará a una solución maximal
+    que es óptima.
+  \end{itemize}
+\end{frame}
 
+\begin{frame}{Matroide}
+  Es una estructura  estructura que toma y generaliza el concepto de
+  independencia lineal en los espacios vectoriales.\\\pause
+  Formalmente un matroide $M$ es un par ordenado de elementos $(E,I)$ 
+  donde $E$ es un conjunto finito e $I$ es un subconjunto del conjunto
+  potencia de $E$ que cumplen las siguientes propiedades
+  \begin{itemize}
+  \item $\emptyset \in I$
+  \item Si $A \in I$ y $B \subseteq A$ entonces $B \in I$
+  \item Si $A, B \in I$ y $|B| < |A|$ entonces existe $e\in A - B$ 
+    tal que $B\cup \{e\}\in I$ 
+  \end{itemize}\pause
+  Es la manera formal de probar que algo puede ser resuelto por un algoritmo Greedy 
+\end{frame}
 
+\begin{frame}{''Demostración'' de un algoritmo Greedy}
+  \begin{itemize}
+    \item Para tener garantizado un “Accepted”, los Greedys hay que
+      demostrarlos.
+    \item Es raro que alguien utilice matroides en programacion competitiva.
+    \item Usualmente lo que se hace es trabajar con reduccion al absurdo. 
+    \item O.... se puede probar con casos de prueba inteligentes.
+    \item Casos de pruebas inteligentes son unos pocos casos chicos o
+      bien pensados, donde poder analizar que ideas sirven.
+    \item Este enfoque es riesgoso, uno tiene que estar preparado para
+      dejar un problema si no te da Accepted.
+    \item Sin embargo suele ser muy efectivo.
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Otros usos de los casos de pruebas}
+  \begin{itemize}
+    \item Podemos usarlos antes de codear para garantizar que no
+      estemos programando cualquier cosa.
+    \item Podemos usarlos para comprobar y buscar algoritmos.
+    \item Y podemos usarlos para entender los problemas 
+      (poco comun en greedy, pero muy importante).
+  \end{itemize}
+\end{frame}
+
+\begin{frame}{Woodworms}
+  \begin{itemize}
+    \item La mejor forma de aprender a resolver Greedys es realizando
+      problemas
+    \item Para demostrar que andan, se procede por el absurdo. Se supone
+      que el greedy no es óptimo y se llega a una contradicción
+    \item Otra forma es probar casos extremos, y confiar en que funciona
+    \item Como los greedys son muy simples de codear, lo mandamos y
+      probamos. Si pasan estamos melos, sino lo volvemos a pensar.
+    \item Para encontrar un greedy en un ejercicio es fundamental probar
+      como resolverías el ejercicio para casos extremos simples.
+  \end{itemize}
+\end{frame}
 
 \section{Proxima sesion}
 \begin{frame}{Contest}
-  TODO
+  \centering
+  \url{https://vjudge.net/contest/284280}
 \end{frame}
 
-\begin{frame}{Next week}
+\begin{frame}{Proxima semana}
   \centering 
   \Large
-  ¿Como son los problemas de una maraton de programacion?
+  Binary search
 \end{frame}
 \end{document}
