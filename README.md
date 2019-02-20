@@ -38,17 +38,18 @@ A menos que se especifique lo contrario, las secciones se realizarán los mierco
         </ul>
       </td>
       <td>
-          Pronto
+          --
       </td>
     </tr>
     <tr>
       <td>Seccion 3</td>
-      <td> -- <br> Feb - <br> TBA </td>
+      <td> Miercoles <br> Feb - 20 <br> 18-205 </td>
       <td>
 	<b>Greedy</b>
       </td>
       <td>
-          Pronto
+          <a href="lect-3/build/lect3-greedy.pdf">[slides]</a><br>
+          <a href="https://vjudge.net/contest/284280">[contest]</a>
       </td>
     </tr>
     <tr>
